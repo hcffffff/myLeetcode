@@ -117,9 +117,11 @@ int mincostTickets(vector<int>& days, vector<int>& costs) {
             int onedayAgo = i - 1;
             int oneweekAgo = i - 7 > 0 ? i - 7 : 0;
             int onemonthAgo = i - 30 > 0 ? i - 30 : 0;
+
             cost = min(memo[onedayAgo] + costs[0], cost);
             cost = min(memo[oneweekAgo] + costs[1], cost);
             cost = min(memo[onemonthAgo] + costs[2], cost);
+            
             memo[i] = cost;
             idx++;
         } else { // 若不需要旅行，则直接等于前一天的cost
