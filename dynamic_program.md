@@ -25,6 +25,12 @@ for 状态1 in 状态1的所有取值：
             dp[状态1][状态2][...] = 求最值(选择1，选择2...)
 ```
 
+## 最优子结构/重叠子问题/dp数组遍历方向
+[labuladong视频讲解](https://www.bilibili.com/video/BV1uv411W73P/)
+[最优子结构原理和 DP 数组遍历方向](https://labuladong.github.io/algo/3/23/72/)
+[BASE CASE 和备忘录的初始值怎么定](https://labuladong.github.io/algo/3/23/73/)
+
+
 ## 简单的斐波那契数列
 用一个dp数组作为记录，从底向上进行计算
 ```cpp
